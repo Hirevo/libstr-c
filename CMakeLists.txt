@@ -28,4 +28,8 @@ add_library(str STATIC
 	src/lstr_test
 	src/lstr_to_lower_case
 	src/lstr_to_upper_case
-    src/lstr_trim)
+	src/lstr_trim
+)
+add_dependencies(str vec)
+target_include_directories(str PUBLIC src)
+target_link_libraries(str vec)
