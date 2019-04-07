@@ -7,11 +7,11 @@
 
 #include "str.h"
 
-/*
-** Transforms this string to lowercase.
-**
-** Does directly modify the original string.
-*/
+/**
+ * Transforms this string to lowercase.
+ *
+ * **Does directly modify the original string.**
+**/
 char *lstr_to_lower_case(char *this)
 {
 	if (this == NULL)

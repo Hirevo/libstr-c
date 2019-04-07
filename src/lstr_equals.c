@@ -7,6 +7,9 @@
 
 #include "str.h"
 
+/**
+ * Checks for string equality.
+**/
 bool lstr_equals(const char *this, const char *candidate)
 {
 	if (this == NULL || candidate == NULL)

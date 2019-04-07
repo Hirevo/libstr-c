@@ -38,3 +38,5 @@ bool lstr_includes(const char *, const char *);
 ssize_t lstr_nb_occur(const char *, const char *);
 bool lstr_ends_with(const char *, const char *);
 bool lstr_starts_with(const char *, const char *);
+char *lstr_take_while(const char *, bool (*)(void *, size_t, char), void *);
+char *lstr_drop_while(const char *, bool (*)(void *, size_t, char), void *);

@@ -7,20 +7,20 @@
 
 #include "intern_str.h"
 
-/*
-** Concatenates this string with one or more strings.
-**
-** Usage:
-**   You must specify the number of strings to concatenate.
-**   For each string to concatenate, you must specify:
-**     - The type of the string (STDSTR for 'char *', STR_t for 'char *').
-**     - The string itself.
-**
-** Exemple:
-**   str->concat(str, 2, STDSTR, "foo", STR_t, init_str(NULL, "bar"));
-**
-** Does directly modify the original string.
-*/
+/**
+ * Concatenates this string with one or more strings.
+ *
+ * Usage:
+ *   You must specify the number of strings to concatenate.
+ *   For each string to concatenate, you must specify:
+ *     - The type of the string (LSTR_STR for 'char \*', LSTR_INT for 'int').
+ *     - The string itself.
+ *
+ * Exemple:
+ *   **`str->concat(str, 2, LSTR_STR, "foo", LSTR_INT, 0);`**
+ *
+ * **Does directly modify the original string.**
+**/
 char *lstr_concat(char *this, size_t nb, ...)
 {
 	va_list list;

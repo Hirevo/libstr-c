@@ -7,11 +7,11 @@
 
 #include "str.h"
 
-/*
-** Returns the string of a specified length from the start index.
-**
-** Does not modify the original string.
-*/
+/**
+ * Returns the string of a specified length from the start index.
+ *
+ * **Does not modify the original string.**
+**/
 char *lstr_substr(const char *this, size_t start, size_t length)
 {
 	char *ret = 0;

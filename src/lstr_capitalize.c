@@ -22,12 +22,12 @@ static int is_alphanum(const char c)
 	return (is_min(c) || is_maj(c) || (c >= '0' && c <= '9'));
 }
 
-/*
-** Capitalizes every words of a string.
-** Words are separated by non-alphanumeric characters.
-**
-** Does directly modify the original string.
-*/
+/**
+ * Capitalizes every words of a string.
+ * Words are separated by non-alphanumeric characters.
+ *
+ * **Does directly modify the original string.**
+**/
 char *lstr_capitalize(char *this)
 {
 	if (this == NULL)

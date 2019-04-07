@@ -8,10 +8,10 @@
 #include "str.h"
 #include <unistd.h>
 
-/*
-** Returns the number of times the specified string
-** is found within this string
-*/
+/**
+ * Returns the number of times the specified string
+ * is found within this string
+**/
 ssize_t lstr_nb_occur(const char *this, const char *str)
 {
 	ssize_t idx = 0;

@@ -7,10 +7,10 @@
 
 #include "str.h"
 
-/*
-** Returns the index of the first occurence of the specified string
-** within this string starting at an offset.
-*/
+/**
+ * Returns the index of the first occurence of the specified string
+ * within this string starting at an offset.
+**/
 ssize_t lstr_index_of(const char *this, size_t offset, const char *to_find)
 {
 	char *idx;

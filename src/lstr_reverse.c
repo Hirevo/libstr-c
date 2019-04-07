@@ -7,11 +7,11 @@
 
 #include "str.h"
 
-/*
-** Returns this string reversed.
-**
-** Does not modify the original string.
-*/
+/**
+ * Returns this string reversed.
+ *
+ * **Does not modify the original string.**
+**/
 char *lstr_reverse(char *this)
 {
 	int len = 0;

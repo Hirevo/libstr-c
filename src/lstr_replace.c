@@ -13,6 +13,11 @@ static int assign(int *var, int value)
 	return (*var);
 }
 
+/**
+ * Replaces all occurences of a substring by a given string.
+ * 
+ * **Does directly modify the current string.**
+**/
 char *lstr_replace(char *this, const char *old, const char *new)
 {
 	char *ret = 0;

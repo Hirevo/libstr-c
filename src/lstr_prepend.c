@@ -7,11 +7,11 @@
 
 #include "str.h"
 
-/*
-** Prepends the specifed string to this string.
-**
-** Does directly modify the original string.
-*/
+/**
+ * Prepends the specifed string to this string.
+ *
+ * **Does directly modify the original string.**
+**/
 char *lstr_prepend(char *this, const char *str)
 {
 	char *ret;

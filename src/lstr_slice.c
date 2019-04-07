@@ -7,11 +7,11 @@
 
 #include "str.h"
 
-/*
-** Returns the string between the start and end indexes.
-**
-** Does not modify the original string.
-*/
+/**
+ * Returns the string between the start and end indexes.
+ *
+ * **Does not modify the original string.**
+**/
 char *lstr_slice(const char *this, size_t start, size_t end)
 {
 	char *ret = 0;

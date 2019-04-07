@@ -7,11 +7,11 @@
 
 #include "str.h"
 
-/*
-** Appends the specifed string to this string.
-**
-** Does directly modify the original string.
-*/
+/**
+ * Appends the specifed string to this string.
+ * 
+ * **Does directly modify the original string.**
+**/
 char *lstr_append(char *this, const char *str)
 {
 	char *ret;

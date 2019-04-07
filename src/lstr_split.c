@@ -7,11 +7,11 @@
 
 #include "intern_str.h"
 
-/*
-** Splits the string by the specified separator string.
-**
-** Does not modify the original string.
-*/
+/**
+ * Splits the string by the specified separator string.
+ *
+ * **Does not modify the original string.**
+**/
 vec_t *lstr_split(const char *this, const char *sep)
 {
 	vec_t *ret;

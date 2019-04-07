@@ -7,9 +7,9 @@
 
 #include "str.h"
 
-/*
-** Returns whether this string starts with the specified string.
-*/
+/**
+ * Returns whether this string starts with the specified string.
+**/
 bool lstr_starts_with(const char *this, const char *prefix)
 {
 	if (this == NULL)

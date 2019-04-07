@@ -17,6 +17,9 @@ static int internal_lstr_spaces_len(const char *str)
 	return (count);
 }
 
+/**
+ * Canonicalizes spaces and tabs to just one space character.
+**/
 char *lstr_epur(char *this)
 {
 	char *tmp;

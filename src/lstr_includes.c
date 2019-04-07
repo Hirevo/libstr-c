@@ -7,9 +7,9 @@
 
 #include "str.h"
 
-/*
-** Returns whether the specified string is found within this string.
-*/
+/**
+ * Returns whether the specified string is found within this string.
+**/
 bool lstr_includes(const char *this, const char *to_find)
 {
 	if (this == NULL)
