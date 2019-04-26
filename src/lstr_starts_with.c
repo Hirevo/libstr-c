@@ -9,10 +9,12 @@
 
 /**
  * Returns whether this string starts with the specified string.
-**/
+ **/
 bool lstr_starts_with(const char *this, const char *prefix)
 {
-	if (this == NULL)
-		return (false);
-	return (lstr_index_of(this, 0, prefix) == 0);
+    if (this == NULL || prefix == NULL)
+        return (false);
+    size_t idx = 0;
+    for (; this[idx] && prefix[idx] && this[idx] == prefix[idx]; idx++);
+    return (prefix[idx] == 0);
 }
