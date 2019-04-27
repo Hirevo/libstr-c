@@ -15,6 +15,7 @@ bool lstr_starts_with(const char *this, const char *prefix)
     if (this == NULL || prefix == NULL)
         return (false);
     size_t idx = 0;
-    for (; this[idx] && prefix[idx] && this[idx] == prefix[idx]; idx++);
+    for (; this[idx] && prefix[idx] && this[idx] == prefix[idx]; idx++)
+        ;
     return (prefix[idx] == 0);
 }

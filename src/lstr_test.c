@@ -12,10 +12,10 @@
  * this string.
  *
  * Supports * and ? as wildcards but no escape mechanism.
-**/
+ **/
 bool lstr_test(const char *this, const char *candidate)
 {
-	if (this == NULL || candidate == NULL)
-		return (false);
-	return (internal_lstr_match(candidate, this, 0, 0));
+    if (this == NULL || candidate == NULL)
+        return (false);
+    return (internal_lstr_match(candidate, this, 0, 0));
 }

@@ -11,7 +11,7 @@
  * Returns the longest prefix whose all characters satisfies the predicate.
  *
  * **Does not modify the original string.**
-**/
+ **/
 char *lstr_take_while(
     const char *this, bool (*predicate)(void *, size_t, char), void *context)
 {
@@ -19,6 +19,7 @@ char *lstr_take_while(
 
     if (this == NULL || predicate == NULL)
         return (-1);
-    for (idx = 0; this[idx] && predicate(context, idx, this[idx]); idx += 1);
+    for (idx = 0; this[idx] && predicate(context, idx, this[idx]); idx += 1)
+        ;
     return (strndup(this, idx));
 }

@@ -7,13 +7,13 @@
 
 #pragma once
 
+#include "vec.h"
 #include <ctype.h>
 #include <stdarg.h>
 #include <stdbool.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include "vec.h"
 
 typedef enum e_strtype { LSTR_STR, LSTR_CHAR, LSTR_INT } strtype_t;
 
